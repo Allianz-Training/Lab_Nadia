@@ -3,9 +3,9 @@ package com.Allianz.Homework251120;
 public class Circle2 {
   private double radius = 1.0;
 
-  Circle() {}
+  public Circle2() {}
 
-  Circle(double radius) {
+  public Circle2(double radius) {
     this.radius = radius;
   }
 

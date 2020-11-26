@@ -8,12 +8,14 @@ public class MovableCircle implements Movable {
 		this.center = new MovablePoint(x, y, xSpeed, ySpeed);
 		this.radius = radius;
 	}
+	
+	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return super.toString();
+		return "MovableCircle [radius=" + radius + ", center=" + center + "]";
 	}
-	
+
+
 	public void moveUp() {
 		center.moveUp();
 	}
@@ -32,9 +34,9 @@ public class MovableCircle implements Movable {
 
 	public static void main(String[] args) {
 		MovableCircle mc = new MovableCircle(7, 10, 5, 9, 100);
-		System.out.println(mc.center.x + " " + mc.center.y);
+		System.out.println(mc);
 		
 		mc.moveUp();
-		System.out.println(mc.center.x + " " + mc.center.y);
+		System.out.println(mc);
 	}
 }

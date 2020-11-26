@@ -4,11 +4,11 @@ public class Circle1 {
   private double radius = 1.0;
   private String color = "red";
 
-  Circle() {
+  public Circle1() {
 
   }
 
-  Circle(double radius) {
+  public Circle1(double radius) {
     this.radius = radius;
   }
 

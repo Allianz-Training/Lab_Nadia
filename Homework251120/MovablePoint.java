@@ -13,11 +13,12 @@ public class MovablePoint implements Movable {
 		this.xSpeed=xSpeed;
 		this.ySpeed=ySpeed;
 	}
+	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return super.toString();
+		return "MovablePoint [x=" + x + ", y=" + y + ", xSpeed=" + xSpeed + ", ySpeed=" + ySpeed + "]";
 	}
+
 	public void moveUp() {
 		this.y = y + ySpeed;
 	}
