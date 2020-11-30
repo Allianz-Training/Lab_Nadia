@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let num = prompt("ใส่เลข") * 1;
+        let star = "";
+
+        let methoddraw1 = num => {
+
+            for (let i = 0; i < num; i++) {
+                star += "*"
+            }
+            alert(star)
+        }
+        //methoddraw1(num);
+
+        let methoddraw2 = num => {
+            for (let o = 0; o < num; o++) {
+                for (let i = 0; i < num; i++) {
+                    star += "*"
+                }
+                star += "\n"
+            }
+            alert(star)
+        }
+        //methoddraw2(num);
+
+        let methoddraw3 = num => {
+            for (let o = 0; o < num; o++) {
+                for (let i = 1; i <= num; i++) {
+                    star += i
+                }
+                star += "\n"
+            }
+            alert(star)
+        }
+        //methoddraw3(num); 
+
+        let methoddraw4 = num => {
+            for (let o = 1; o <= num; o++) {
+                for (let i = 1; i <= num; i++) {
+                    star += o;
+                }
+                star += "\n"
+            }
+            alert(star)
+        }
+        //methoddraw4(num);
+
+        let methoddraw5 = num => {
+            for (let o = num; o > 0; o--) {
+                for (let i = 1; i <= num; i++) {
+                    star += o;
+                }
+                star += "\n"
+            }
+            alert(star)
+        }
+        //methoddraw5(num);
+
+        let methoddraw6 = num => {
+            for (let o = 0; o < num; o++) {
+                for (let i = 1; i <= num; i++) {
+                    star += i + (num * o);
+                }
+                star += "\n"
+            }
+            alert(star)
+        }
+        //methoddraw6(num);
+
+        let methoddraw7 = num => {
+            for (let o = num - 1; o >= 0; o--) {
+                for (let i = num; i > 0; i--) {
+                    star += i + (num * o);
+                }
+                star += "\n"
+            }
+            alert(star)
+        }
+        //methoddraw7(num);
+
+        let methoddraw8 = num => {
+            for (let o = 0; o < num; o++) {
+                for (let i = 0; i < 1; i++) {
+                    star += o * 2;
+                }
+                star += "\n"
+            }
+            alert(star)
+        }
+        //methoddraw8(num);
+
+        let methoddraw9 = num => {
+            for (let o = 1; o <= num; o++) {
+                for (let i = 0; i < 1; i++) {
+                    star += o * 2;
+                }
+                star += "\n"
+            }
+            alert(star)
+        }
+        //methoddraw9(num);
+
+        let methoddraw10 = num => {
+            for (let o = 1; o <= num; o++) {
+                for (let i = 1; i <= num; i++) {
+                    star += i * o
+                }
+                star += "\n"
+            }
+            alert(star)
+        }
+        //methoddraw10(num);
+
+        let methoddraw11 = num => {
+            for (let o = 0; o < num; o++) {
+                for (let i = 0; i < num; i++) {
+                    if (i == o) { star += "-" }
+                    else { star += "*" }
+                }
+                star += "\n"
+            }
+            alert(star)
+        }
+        //methoddraw11(num);
+
+        let methoddraw12 = num => {
+            for (let o = 0; o < num; o++) {
+                for (let i = 0; i < num; i++) {
+                    if (o + i == num - 1) {
+                        star += "-";
+                    } else {
+                        star += "*";
+                    }
+                }
+                star += "\n";
+            }
+            alert(star)
+        }
+        // methoddraw12(num);
+
+        let methoddraw13 = num => {
+
+            for (let o = 0; o < num; o++) {
+                for (let i = 0; i < num; i++) {
+                    if (i > o) {
+                        star += "-";
+                    } else {
+                        star += "*";
+                    }
+                }
+                star += "\n";
+            }
+            alert(star);
+        }
+        //methoddraw13(num);
+
+        let methoddraw14 = num => {
+           
+            for (let o = 0; o < num; o++) {
+                for (let i = 0; i < num; i++) {
+                    if (i + o >= num) {
+                        star += "-";
+                    } else {
+                        star += "*";
+                    }
+                }
+                star += "\n";
+            }
+            alert(star);
+        }
+        //methoddraw14(num);
+
+        let methoddraw15 = num => {
+           
+            for (let o = 0; o < num * 2 - 1; o++) {
+                for (let i = 0; i < num; i++) {
+                    if (i > o || i + o >= num * 2 - 1) {
+                        star += "-";
+                    } else {
+                        star += "*";
+                    }
+                }
+                star += "\n";
+            }
+            alert(star);
+        }
+        //methoddraw15(num);
+
+        // ข้อ16 ไม่มี
+
+        let methoddraw17 = num => {
+      
+            for (let o = 0; o < num; o++) {
+                for (let i = 0; i < num; i++) {
+                    if (i + o < num - 1) {
+                        star += "-";
+                    } else {
+                        star += "*";
+                    }
+                }
+                star += "\n";
+            }
+            alert(star);
+        }
+        // methoddraw17(num);
+
+        let methoddraw18 = num => {
+       
+            for (let o = 0; o < num; o++) {
+                for (let i = 0; i < num; i++) {
+                    if (o > i) {
+                        star += "-";
+                    } else {
+                        star += "*";
+                    }
+                }
+                star += "\n";
+            }
+            alert(star);
+        }
+        // methoddraw18(num);
+
+        let methoddraw19 = num => {
+        
+            for (let o = 0; o < num * 2 - 1; o++) {
+                for (let i = 0; i < num; i++) {
+                    if (i + o < num - 1 || o - i >= num) {
+                        star += "-";
+                    } else {
+                        star += "*";
+                    }
+                }
+                star += "\n";
+            }
+            alert(star);
+        }
+        // methoddraw19(num);
+
+        let methoddraw20 = num => {
+            
+            let v = 1;
+            for (let o = 0; o < num * 2 - 1; o++) {
+                for (let i = 0; i < num; i++) {
+                    if (i + o < num - 1 || o - i >= num) {
+                        star += "-";
+                    } else {
+                        star += v;
+                        v++;
+                    }
+                }
+                star += "\n";
+            }
+            alert(star);
+        }
+        // methoddraw20(num);
+
+        let methoddraw21 = num => {
+            
+            for (let o = 0; o < num; o++) {
+                for (let i = 0; i < num * 2 - 1; i++) {
+                    if (i + o < num - 1 || i - o >= num) {
+                        star += "-";
+                    } else {
+                        star += "*";
+                    }
+                }
+                star += "\n";
+            }
+            alert(star);
+        }
+        // methoddraw21(num);
+
+        let methoddraw22 = num => {
+            
+            for (let o = 0; o < num; o++) {
+                for (let i = 0; i < num * 2 - 1; i++) {
+                    if (o > i || i + i >= num * 2 - 1) {
+                        star += "-";
+                    } else {
+                        star += "*";
+                    }
+                }
+                star += "\n";
+            }
+            alert(star);
+        }
+         // methoddraw22(num);
+
+        let methoddraw23 = num => {
+            
+            for (let o = 0; o < num * 2 - 1; o++) {
+                for (let i = 0; i < num * 2 - 1; i++) {
+                    if (0 + i < num - 1 || i - 0 >= num || 0 - i >= num || 0 + i >= num * 3 - 2) {
+                       star += "-";
+                    } else {
+                       star += "*";
+                    }
+                }
+               star += "\n";
+            }
+            alert(star);
+        }
+        // methoddraw23(num);
+
+        let methoddraw24 = num => {
+            
+            let v = 1;
+            for (let o = 0; o < num * 2 - 1; o++) {
+                for (let i = 0; i < num * 2 - 1; i++) {
+                    if (o + i < num - 1 || i - o >= num || o - i >= num || o + i >= num * 3 - 2) {
+                        star += "-";
+                    } else {
+                        star += v;
+                        v++;
+                    }
+                }
+                star += "\n";
+            }
+            alert(star);
+        }
+        // methoddraw24(num);
+    </script>
+</body>
+
+</html>
