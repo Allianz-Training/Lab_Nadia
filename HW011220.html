@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        array1_1 = [1, 2, 30, 400];
+        console.log(array1_1.map((v) => v * 2));
+        array1_2 = [1, 2, 3, 4];
+        console.log(array1_2.map((v) => v.toString()));
+        array1_3 = [1, "1", 2, {}];
+        console.log(array1_3.map((v) => typeof (v)));
+        array1_4 = ["apple", "banana", "orange"];
+        console.log(array1_4.map((v) => v.toUpperCase()));
+        array1_5 = [
+            { name: "apple", age: 14 },
+            { name: "banana", age: 18 },
+            { name: "watermelon", age: 32 }
+        ];
+        console.log(array1_5.map((v) => v.name));
+        array1_6 = [
+            { name: "apple", age: 14 },
+            { name: "banana", age: 18 },
+            { name: "watermelon", age: 32 }
+        ];
+        console.log(array1_6.map((v) => v.age));
+        array1_7 = [
+            { name: "apple", surname: "London" },
+            { name: "banana", surname: "Bangkok" },
+            { name: "watermelon", surname: "Singapore" }
+        ];
+        console.log(array1_7.map((v) => v.name + " " + v.surname));
+        array1_8 = [1, 3, 4, 5, 6, 7, 8]
+        console.log(array1_8.map((v) => {
+            if (v % 2 == 0) { return "even" }
+            else return "odd"
+        }))
+        array1_9 = [1, -3, 2, 8, -4, 5]
+        console.log(array1_9.map((v) => Math.abs(v)
+        ))
+        array1_10 = [100, 200.25, 300.84, 400.3]
+        console.log(array1_10.map((v) => v.toFixed(2)
+        ))
+        array1_11 = [
+            { name: "apple", birth: "2000-01-01" },
+            { name: "banana", birth: "1990-10-01" },
+            { name: "watermelon", birth: "1985-12-01" }
+        ]
+        console.log(array1_11.map(function (v) {
+            let ms = new Date(v.birth)
+            let now = Date.now()
+            let age = Math.floor((now - ms) / (3.1556926 * Math.pow(10, 10)))
+            return { name: v.name, birth: v.birth, age: age }
+        }))
+        array1_12 = [
+            { name: "apple", birth: "2000-01-01" },
+            { name: "banana", birth: "1990-10-01" },
+            { name: "watermelon", birth: "1985-12-01" }
+        ]
+        console.log(array1_12.map(v => {
+            let split = v.birth.split("-");
+            let month = split[1];
+            let arr = [0,"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+            let newMonth = arr[parseInt(month)]
+            return "<tr>\n<td>" + v.name + "</td>\n<td>" + split[2] + " " + newMonth + " " + split[0] + "</td>\n</tr>"
+        }))
+
+        array2_1 = [1,2,30,400]
+        console.log(array2_1.filter(v => v>10))
+        array2_2 = [1,2,3,4]
+        console.log(array2_2.filter(v => v%2!=0))
+        array2_3 = [1,"1",2,{}]
+        console.log(array2_3.filter(v => typeof v == "number"))
+        array2_4 = ["apple","banana","orange","pineapple","watermelon"]
+        console.log(array2_4.filter(v => v.length > 6))
+        array2_5 = [
+            { name: "apple", age: 14 },
+            { name: "banana", age: 18 },
+            { name: "watermelon", age: 32 },
+            { name: "pineapple", age: 16 },
+            { name: "peach", age: 24 }
+        ]
+        console.log(array2_5.filter(v => v.age < 18))
+        array2_6 = [
+            { name: "apple", age: 14 },
+            { name: "banana", age: 18 },
+            { name: "watermelon", age: 32 },
+            { name: "pineapple", age: 16 },
+            { name: "peach", age: 24 }
+        ]
+        console.log(array2_6.filter(v => v.age != 32))
+        array2_7 = [1, -3, 2, 8, -4, 5]
+        console.log(array2_7.filter(v => v>0))
+        array2_8 = [1,3,4,5,6,7,8]
+        console.log(array2_8.filter(v => v%3==0))
+        array2_9 = ["peach", 1, -3, "2", {}, []]
+        console.log(array2_9.filter(v => typeof v == "string"))
+        array2_10 = ["APPLE","appLE","PEACH","PEach"]
+        console.log(array2_10.filter(v => v == v.toUpperCase()))
+        array2_11 = [
+            { name: "apple", birth: "2001-01-01" },
+            { name: "banana", birth: "1990-10-10" },
+            { name: "watermelon", birth: "1985-12-30" },
+            { name: "peach", birth: "2002-10-13" }
+        ]
+        console.log(array2_11.filter(v => {
+            let split = v.birth.split("-")
+            let month = split[1]           
+            return month==("10");
+        }))
+        array2_12 = [
+            { name: "apple", birth: "2001-01-01" },
+            { name: "banana", birth: "1990-10-10" },
+            { name: "watermelon", birth: "1985-12-30" },
+            { name: "peach", birth: "2002-10-13" }
+        ]
+        console.log(array2_12.filter(v => {
+            let split = v.birth.split("-")
+            let year = split[0]           
+            return (parseInt(year))<2000;
+        }))
+
+    </script>
+</body>
+
+</html>
