@@ -1,6 +1,6 @@
 //Lab1.1
 let text:string
-text = 'Hello World'
+text = 'Hello World' 
 console.log(text)
 //Lab1.2
 let string:string = 'Something'
