@@ -1,0 +1,11 @@
+<app-task-component *ngFor="let item of todoList" [task]="item" (onDelete)="deleteItem($event)">
+
+</app-task-component>
+<div>
+    <input [(ngModel)]="inputName" />
+    <br><br>
+    
+    <input [(ngModel)]="inputDescription" />
+    <hr>
+    <button (click)="push()">Submit</button>
+</div>
