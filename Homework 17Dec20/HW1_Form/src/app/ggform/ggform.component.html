@@ -1,0 +1,26 @@
+<form [formGroup]="form">
+<div>
+    <div>
+        <h3>Name<span class="dokjan" >*</span></h3>
+        <input placeholder="Your answer" formControlName="Name" />
+        <span *ngIf="form.get('Name').errors?.required">Name required</span>
+    </div>
+    <div>
+        <h3>Email<span class="dokjan" >*</span></h3>
+        <input placeholder="Your answer" formControlName="Email" />
+        <span *ngIf="form.get('Email').errors?.required">Email required</span>
+        <span *ngIf="form.get('Email').errors?.email">Incorrect Email</span>
+    </div>
+    <div>
+        <h3>Postal Address<span class="dokjan" >*</span></h3>
+        <input placeholder="Your answer" formControlName="Postal" />
+        <span *ngIf="form.get('Postal').errors?.required">Postal Address required</span>
+    </div>
+    <div>
+        <h3>Comments</h3>
+        <input placeholder="Your answer" formControlName="Comments" />
+    </div>
+    <div>
+        <button (click)="onClick()">SUBMIT</button>
+    </div>
+</div>
