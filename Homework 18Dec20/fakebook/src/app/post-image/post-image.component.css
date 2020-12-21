@@ -1,0 +1,23 @@
+.card {
+    margin: 2% 25%;
+}
+h5{
+    color: rgb(62, 62, 180);
+}
+#smallPic{
+    width: 7%;
+    border-radius: 90px;
+}
+#largePic{
+    width:100%
+}
+span{
+    margin-top:10px;
+    text-align: center;
+}
+svg{
+    width:15px;
+}
+#comment{
+    display:flex;
+}
