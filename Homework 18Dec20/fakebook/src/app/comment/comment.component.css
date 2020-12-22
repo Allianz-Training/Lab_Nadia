@@ -1,0 +1,48 @@
+.myComment{     
+    width: 100%;   
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 2%; */
+}
+div.blank{
+    margin: 1%;
+}
+.outside{
+    margin: -2% 25% 10px 25%;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    padding:1% 0%;
+}
+.myComment img{
+    width: 7%;
+    height: 7%;
+    padding:0px 3px 0px 3px;
+}
+.Task img{
+    width: 7%;
+    height: 7%;
+    padding:0px 3px 0px 3px;
+}
+input{
+    border-radius: 13px;
+    border-color: lightgray;
+    width:90%;
+    
+}
+::placeholder{
+    padding-left: 10px;
+}
+.Task{
+    border-color: lightgray;
+    display: flex;
+    /* grid-template-columns: auto auto; */
+    width: 100%;
+    padding: 2% 1% 0% 2%;
+}
+.Task p{
+    border: 1px solid lightgrey;
+    border-radius: 0.9rem;
+    padding: 1%;
+    width: 92.5%;
+    margin-bottom: 0px;
+}

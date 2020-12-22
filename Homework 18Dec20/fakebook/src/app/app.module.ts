@@ -4,15 +4,18 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { PostComponent } from './post/post.component';
 import { PostImageComponent } from './post-image/post-image.component';
+import { CommentComponent } from './comment/comment.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostComponent,
-    PostImageComponent
+    PostImageComponent,
+    CommentComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

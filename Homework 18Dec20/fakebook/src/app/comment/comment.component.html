@@ -1,0 +1,16 @@
+<div class="outside">
+<div class="myComment">
+    <img
+        src="https://d336522k03e3cu.cloudfront.net/wysiwyg/accessory/lotus/blanket/l-eco-pp/peppa-pig-character-03.png" />
+    <input type="text" 
+    placeholder="Write a comment..." 
+    class="form-control" 
+    [(ngModel)]="Task"
+    (keyup.enter)="send()"
+    />
+    
+</div>
+<div class="blank" *ngIf="comments.length!=0"></div>
+<div class="Task" *ngFor="let c of comments"><img
+    src="https://d336522k03e3cu.cloudfront.net/wysiwyg/accessory/lotus/blanket/l-eco-pp/peppa-pig-character-03.png" /><p >{{ c }}</p></div>
+</div>
